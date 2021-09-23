@@ -78,6 +78,8 @@ textarea {
   border-right: 2px solid rgba(0, 0, 0, .125);
   padding: 2.75rem 3.25rem;
   width: 15rem;
+  height: 100%;
+  text-align: center;
 }
 
 .list-group-item {
