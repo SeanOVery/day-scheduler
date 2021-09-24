@@ -94,7 +94,6 @@ textarea {
 }
 
 .schedule-item {
-  height: 100% !important; 
   width: 100%;
   padding: 2.75rem 3.25rem;
 }
