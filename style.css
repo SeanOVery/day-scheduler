@@ -19,6 +19,7 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  color: white;
 }
 
 .description {
@@ -73,6 +74,8 @@ textarea {
 .container {
   max-width: 85vw;
   margin: 3rem auto;
+  background-color: rgba(30, 30, 30 .7);
+  color: white;
 }
 
 .inline-time {
@@ -84,6 +87,8 @@ textarea {
   text-align: center;
   height: 110px;
   font-size: 1.3rem;
+  background-color: white;
+  color: black;
 }
 
 .list-group-item {

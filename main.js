@@ -27,7 +27,7 @@ function displaySchedule() {
             newInput = $('<input>'),
             newBtn = $('<button>');
 
-        newLi.attr('class', 'list-group-item d-flex justify-content-between align-items-center')
+        newLi.attr('class', 'list-group-item d-flex justify-content-between align-items-center bg-dark')
         newSpan.attr('class', 'inline-time').text(`${moment().startOf('day').add((i + 9), 'h').format('h:mm A')}`)
         newInput.attr('class', 'schedule-item').attr('type', 'text').attr('data-index', i).val(scheduleStorageArr[i])
         newBtn.attr('class', 'set-btn').text('Save').on('click', saveItem)
