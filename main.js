@@ -1,5 +1,6 @@
 const currentDayEl = $('#currentDay'),
-      listGroupUl = $('.list-group');
+      listGroupUl = $('.list-group'),
+      dialogEl = $('#dialog');
 let   scheduleStorageArr = ['', '', '', '', '', '', '', '', ''];
 // Global variable declaration.
 
@@ -57,6 +58,10 @@ function saveItem(ev) {
         value = $(ev.target).siblings().eq(-1).val();
     scheduleStorageArr.splice(index, 1, value)
     localStorage.setItem('schedule', JSON.stringify(scheduleStorageArr))
+    dialogEl.dialog({
+        height: 100,
+        width: 100
+    })
 } // Function updates local storage and page with new item added 
 
 init(); // Run on page open
