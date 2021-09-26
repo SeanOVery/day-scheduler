@@ -64,6 +64,7 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  text-align: center;
 }
 
 .saveBtn i:hover {
@@ -117,7 +118,27 @@ textarea {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1630px) {
+    .set-btn {
+      font-size: 1.1rem;
+    }
+
+    .inline-time {
+      font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+  .set-btn {
+    font-size: 0.9rem;
+  }
+
+  .inline-time {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
   .list-group-item {
     flex-direction: column;
   }
@@ -126,6 +147,7 @@ textarea {
     width: 80vw;
     border: 2px solid rgba(0, 0, 0, .125);
     border-radius: 1rem 1rem 0 0;
+    font-size: 1.3rem;
   }
 
   .schedule-item {
@@ -135,5 +157,6 @@ textarea {
   .set-btn {
     width: 80vw;
     border-radius: 0 0 1rem 1rem;
+    font-size: 1.3rem;
   }
 }
